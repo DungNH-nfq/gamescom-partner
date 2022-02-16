@@ -5,12 +5,16 @@
   "description": "This is the app for Gamescom partners for candidate testing.",
   "author": "Dzung <d.nguyenhoang@shopmacher.de>",
   "license": "UNLICENSED",
+  "homepage": "https://dungnh-nfq.github.io/gamescom-partner/",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
+    "gh-pages": "^3.2.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
