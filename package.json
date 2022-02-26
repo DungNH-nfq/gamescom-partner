@@ -18,8 +18,9 @@
     "preview": "vite preview",
     "predeploy": "npm run build-staging",
     "deploy": "gh-pages -d dist",
-    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.tsx\"",
-    "test": "jest --coverage"
+    "format": "prettier . --write --ignore-path .gitignore && git update-index --again",
+    "test:unit": "jest",
+    "test:unit:coverage": "jest --silent --watchAll=false --coverage"
   },
   "dependencies": {
     "dotenv": "^16.0.0",

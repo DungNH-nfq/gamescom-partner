@@ -66,6 +66,13 @@ Start the server
 $ npm run dev
 ```
 
+Run tests
+
+```bash
+$ npm test:unit
+$ npm test:unit:coverage
+```
+
 Deploy to the github pages
 
 > The app will be deployed to the github pages and url to access it is **https://dungnh-nfq.github.io/gamescom-partner/**
