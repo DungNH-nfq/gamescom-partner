@@ -87,6 +87,9 @@ module.exports = {
       lineHeight: {
         5.5: '1.375rem',
       },
+      textUnderlineOffset: {
+        3: '3px',
+      },
     },
   },
   variants: {
