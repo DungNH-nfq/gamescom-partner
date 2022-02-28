@@ -6,7 +6,7 @@ import {
   faUser,
 } from '@fortawesome/free-solid-svg-icons';
 
-const FooterOnMobile = () => {
+export const FooterOnMobile = () => {
   return (
     <div className="sticky md:relative visible md:invisible h-18 md:h-0 bottom-0 left-0 w-full uppercase bg-grey-100 flex justify-around items-center text-white font-semibold text-[9px]">
       <a href="#" className="hover:text-grey-30 w-[75px] h-auto text-center">
@@ -32,5 +32,3 @@ const FooterOnMobile = () => {
     </div>
   );
 };
-
-export default FooterOnMobile;

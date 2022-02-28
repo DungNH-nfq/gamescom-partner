@@ -1,4 +1,4 @@
-const NavigationOnTop = () => {
+export const NavigationOnTop = () => {
   return (
     <div className="text-xs font-normal leading-9 bg-grey-90 invisible md:visible h-0 md:h-auto">
       <div className="max-w-6xl mx-auto px-3 flex items-center justify-between">
@@ -15,5 +15,3 @@ const NavigationOnTop = () => {
     </div>
   );
 };
-
-export default NavigationOnTop;

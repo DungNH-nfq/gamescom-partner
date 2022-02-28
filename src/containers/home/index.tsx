@@ -1,8 +1,8 @@
 import AboutMe from '../aboutMe';
 import Gallery from '../gallery';
-import FooterOnMobile from '../footerOnMobile';
+import { FooterOnMobile } from '../footerOnMobile';
 
-const Home = () => {
+export const Home = () => {
   return (
     <div className="mx-auto m-0 p-0">
       <div className="flex flex-cols items-center justify-center text-left">
@@ -19,5 +19,3 @@ const Home = () => {
     </div>
   );
 };
-
-export default Home;

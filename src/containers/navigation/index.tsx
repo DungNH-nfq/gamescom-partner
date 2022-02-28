@@ -2,7 +2,7 @@ import Logo from '../../components/logo';
 import NavigationMainMenu from '../navigationMainMenu';
 import NavigationIconMenu from '../navigationIconMenu';
 
-const Navigation = () => {
+export const Navigation = () => {
   return (
     <div>
       <div className="max-w-6xl mx-auto px-3 h-25 flex items-center bg-grey-100">
@@ -19,5 +19,3 @@ const Navigation = () => {
     </div>
   );
 };
-
-export default Navigation;

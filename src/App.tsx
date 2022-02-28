@@ -1,6 +1,6 @@
-import Header from './containers/header';
-import Home from './containers/home';
-import HeaderBanner from './containers/headerBanner';
+import { Header } from './containers/header';
+import { Home } from './containers/home';
+import { HeaderBanner } from './containers/headerBanner';
 
 export default function App() {
   return (

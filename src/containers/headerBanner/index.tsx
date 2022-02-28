@@ -1,6 +1,6 @@
 import bannerOnHeader from '../../assets/banner-on-header.jpg';
 
-const HeaderBanner = () => {
+export const HeaderBanner = () => {
   return (
     <img
       className="object-cover w-full h-[350px] md:h-auto"
@@ -9,5 +9,3 @@ const HeaderBanner = () => {
     />
   );
 };
-
-export default HeaderBanner;
