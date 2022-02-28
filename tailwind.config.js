@@ -32,6 +32,16 @@ const colors = {
   red: '#FF1556',
 };
 
+const themeScreens = {
+  screens: {
+    sm: '640px',
+    md: '768px',
+    lg: '1140px',
+    xl: '1280px',
+    '2xl': '1536px',
+  },
+};
+
 module.exports = {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   darkMode: 'media',
@@ -57,6 +67,25 @@ module.exports = {
             hover: colors.purple['70'],
           },
         },
+      },
+      width: {
+        26: '6.875rem',
+      },
+      height: {
+        25: '6.25rem',
+      },
+      spacing: {
+        3.5: '0.875rem',
+        4.5: '1.125rem',
+        5.5: '1.375rem',
+        7.5: '1.875rem',
+        18: '4.5rem',
+      },
+      fontSize: {
+        34: '34px',
+      },
+      lineHeight: {
+        5.5: '1.375rem',
       },
     },
   },
