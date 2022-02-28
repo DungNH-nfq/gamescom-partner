@@ -1,16 +1,15 @@
-import './App.css';
+import Header from './containers/header';
+import Home from './containers/home';
+import HeaderBanner from './containers/headerBanner';
 
-function App() {
+export default function App() {
   return (
-    <div className="flex justify-center items-center w-screen h-screen bg-gray-900">
-      <div className="w-3/12 p-6 mx-auto rounded text-center bg-gray-800 space-y-5">
-        <h1 className="text-white text-4xl">
-          Vite + React (Typescript) + Tailwind
-        </h1>
-        <p className="text-blue-300 text-2xl">It's working</p>
+    <main className="flex flex-col h-screen overflow-auto md:overflow-hidden min-w-[376px]">
+      <Header />
+      <div className="relative flex-1 overflow-visible md:overflow-y-scroll">
+        <HeaderBanner />
+        <Home />
       </div>
-    </div>
+    </main>
   );
 }
-
-export default App;
