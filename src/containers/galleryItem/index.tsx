@@ -4,7 +4,7 @@ import { faBell } from '@fortawesome/free-solid-svg-icons';
 import { PropsGalleryItem } from '../../typings/gallery';
 import noThumbnailImage from '../../assets/noThumbnail.jpg';
 
-const GalleryItem = (props: PropsGalleryItem) => {
+export const GalleryItem = (props: PropsGalleryItem) => {
   const {
     thumbnail = null,
     title = '',
@@ -23,7 +23,12 @@ const GalleryItem = (props: PropsGalleryItem) => {
     <div className="flex flex-col items-start">
       {thumbnailElement}
       <div className="flex items-start justify-between w-full px-0 md:px-[7px] mt-[14px] md:mt-5.5">
-        <div className="text-white text-sm font-bold mr-3">{title}</div>
+        <div
+          data-id="gallery-item-title"
+          className="text-white text-sm font-bold mr-3"
+        >
+          {title}
+        </div>
         {subscribeElement}
       </div>
     </div>
@@ -62,6 +67,7 @@ function getSubscribeElement(
   if (isSubscribed) {
     return (
       <button
+        data-id="gallery-item-subscribed"
         className="cursor-pointer text-2xl leading-6 text-blue-100"
         onClick={() => onToggleSubscribe(false)}
       >
@@ -72,6 +78,7 @@ function getSubscribeElement(
 
   return (
     <button
+      data-id="gallery-item-unsubscribed"
       className="cursor-pointer text-2xl leading-6 text-white hover:text-grey-60"
       onClick={() => onToggleSubscribe(true)}
     >
@@ -79,5 +86,3 @@ function getSubscribeElement(
     </button>
   );
 }
-
-export default GalleryItem;

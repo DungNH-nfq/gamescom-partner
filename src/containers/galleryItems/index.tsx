@@ -1,7 +1,7 @@
 import { Component } from 'react';
 
 import { PropsGalleryItem } from '../../typings/gallery';
-import GalleryItem from '../galleryItem';
+import { GalleryItem } from '../galleryItem';
 
 type GalleryItemsState = {
   items: PropsGalleryItem[];
